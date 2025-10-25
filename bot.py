@@ -2,7 +2,7 @@ import telebot
 import re
 
 TOKEN = "8290141066:AAHNkJru74i9gXfEzUoOG69JCpLt0SsCBBM"
-GROUP_ID = -1002237546410
+GROUP_ID = -1002309910858
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -14,4 +14,5 @@ def check_message(message):
             bot.reply_to(message, "man bor")
 
 print("🤖 Bot ishga tushdi...")
+
 bot.polling(none_stop=True)
